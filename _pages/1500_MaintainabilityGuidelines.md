@@ -6,8 +6,8 @@ sidebar:
   nav: "sidebar"
 ---
 
-### <a name="av1500"></a> Methods should not exceed 7 statements (AV1500) ![](/assets/images/1.png)
-A method that requires more than 7 statements is simply doing too much or has too many responsibilities. It also requires the human mind to analyze the exact statements to understand what the code is doing. Break it down into multiple small and focused methods with self-explaining names, but make sure the high-level algorithm is still clear.
+### <a name="CSS1500"></a> Methods should not exceed 15 statements (CSS1500) ![](/assets/images/1.png)
+A method that requires more than 15 statements is simply doing too much or has too many responsibilities. It also requires the human mind to analyze the exact statements to understand what the code is doing. Break it down into multiple small and focused methods with self-explaining names, but make sure the high-level algorithm is still clear.
 
 ### <a name="av1501"></a> Make all members `private` and types `internal sealed` by default (AV1501) ![](/assets/images/1.png)
 To make a more conscious decision on which members to make available to other classes, first restrict the scope as much as possible. Then carefully decide what to expose as a public member or type.
@@ -387,15 +387,15 @@ C# 4.0's named arguments have been introduced to make it easier to call COM comp
 
 	object[] myAttributes = type.GetCustomAttributes(typeof(MyAttribute), inherit: false);
 
-### <a name="av1561"></a> Don't declare signatures with more than 3 parameters (AV1561) ![](/assets/images/1.png)
-To keep constructors, methods, delegates and local functions small and focused, do not use more than three parameters. Do not use tuple parameters. Do not return tuples with more than two elements.
+### <a name="CSS1561"></a> Don't declare signatures with more than 5 parameters (CSSs1561) ![](/assets/images/1.png)
+To keep constructors, methods, delegates and local functions small and focused, do not use more than five parameters. Do not use tuple parameters. Do not return tuples with more than two elements.
 
 If you want to use more parameters, use a structure or class to pass multiple arguments, as explained in the [Specification design pattern](http://en.wikipedia.org/wiki/Specification_pattern). 
 In general, the fewer the parameters, the easier it is to understand the method. Additionally, unit testing a method with many parameters requires many scenarios to test.
 
 **Exception:** A parameter that is a collection of tuples is allowed.
 
-### <a name="av1562"></a> Don't use `ref` or `out` parameters (AV1562) ![](/assets/images/1.png)
+### <a name="CSS1562"></a> Don't use `ref` parameters (CSS1562) ![](/assets/images/1.png)
 They make code less understandable and might cause people to introduce bugs. Instead, return compound objects or tuples.
 
 **Exception:** Calling and declaring members that implement the [TryParse](https://docs.microsoft.com/en-us/dotnet/api/system.int32.tryparse) pattern is allowed. For example:

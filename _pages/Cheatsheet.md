@@ -67,7 +67,7 @@ NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra
 <br/>
 **Maintainability**
 
-* Methods should not exceed 7 statements (AV1500)
+* Methods should not exceed 15 statements (AV1500)
 * Make all members `private` and types `internal sealed` by default (AV1501)
 * Avoid conditions with double negatives (AV1502)
 * Don't use "magic" numbers (AV1515)
@@ -80,6 +80,7 @@ NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra
 * Avoid nested loops (AV1532)
 </td>
 <td class="column">
+
 * Always add a block after the keywords `if`, `else`, `do`, `while`, `for`, `foreach` and `case` (AV1535)
 * Always add a `default` block after the last `case` in a `switch` statement (AV1536)
 * Finish every `if`-`else`-`if` statement with an `else` clause (AV1537)
@@ -89,8 +90,8 @@ NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra
 * Call the more overloaded method from other overloads (AV1551)
 * Only use optional arguments to replace overloads (AV1553)
 * Avoid using named arguments (AV1555)
-* Don't declare signatures with more than 3 parameters (AV1561)
-* Don't use `ref` or `out` parameters (AV1562)
+* Don't declare signatures with more than 5 parameters (AV1561)
+* Don't use `ref` parameters (AV1562)
 * Avoid signatures that take a `bool` flag (AV1564)
 * Prefer `is` patterns over `as` operations (AV1570)
 * Don't comment out code (AV1575)

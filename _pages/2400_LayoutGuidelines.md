@@ -8,7 +8,7 @@ sidebar:
 
 ### <a name="av2400"></a> Use a common layout (AV2400) ![](/assets/images/1.png)
 
-- Keep the length of each line under 130 characters.
+- Keep the length of each line under 180 characters.
 
 - Use an indentation of 4 spaces, and don't use tabs
 

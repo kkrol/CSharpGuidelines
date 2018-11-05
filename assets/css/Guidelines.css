@@ -326,3 +326,10 @@ img[alt="logo"]
 {
 	width: 20%;
 }
+
+.logo img
+{
+  width: auto;
+  max-width: 300px;
+  max-height: 150px;
+}

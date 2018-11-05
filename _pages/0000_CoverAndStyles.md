@@ -4,12 +4,13 @@ NOTE: Requires Markdown Extra. See http://michelf.ca/projects/php-markdown/extra
 
 <link href="style.css" type="text/css" rel="stylesheet"></link>
 
-<div style="text-align:right" markdown="1">
+<div class="logo" style="text-align:right" markdown="1">
 ![logo](assets/images/logo.png)
+![logoCss](assets/images/css_ikon.png)
 </div>
 <br/>
 <div class="title">
-Coding Guidelines
+Coding Guidelines for C&S Software sp. z.o.o.
 </div><br/>
 <div class="subTitle">
 for C# 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 7.1, 7.2 and 7.3
@@ -19,4 +20,7 @@ for C# 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 7.1, 7.2 and 7.3
 Dennis Doomen<br/>
 Version %semver%<br/>
 %commitdate%
+
+<br/>
+With additional changes by Krzysztof Kr\xf3l<br/>
 </div>
